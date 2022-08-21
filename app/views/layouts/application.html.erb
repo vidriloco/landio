@@ -20,12 +20,14 @@
 		<meta name="msapplication-navbutton-color" content="#2a2a2a">
 		<!-- iOS Safari -->
 		<meta name="apple-mobile-web-app-status-bar-style" content="#2a2a2a">
-		<title>Organizers</title>
+		<title>Alejandro Cruz</title>
 		<!-- Favicon -->
 		<link rel="icon" type="image/png" sizes="56x56" href="images/fav-icon/icon.png">
 
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+    
+    <%= yield :html %>
     
 		<!-- Fix Internet Explorer ______________________________________-->
 		<!--[if lt IE 9]>

@@ -1,38 +1,6 @@
 <!-- Canvas -->
-<canvas id="orb-canvas"></canvas>
-<!-- Overlay -->
-<div class="overlay">
-  <!-- Overlay inner wrapper -->
-  <div class="overlay__inner">
-    <!-- Title -->
-    <h1 class="overlay__title">
-      
-      <span class="text-gradient">Landio</span>!
-    </h1>
-    <!-- Description -->
-    <p class="overlay__description">
-      A landing page template <br/> <b>out</b> of the ordinary!</i>
-    </p>    
-    
-    <%= form_for Subscriber.new do |s| %>
-    <div class="row">
-      <div class="col-8">
-        <%= s.text_field :email, placeholder: 'Join the waiting list',  class: 'field' %>
-      </div>
-      <div class="col-4">
-        <%= s.button 'Notify me', class: "overlay__btn overlay__btn--transparent" %>
-      </div>
-    </div>
-    <% end %>
-    
-    <p id="img-1" class="floating-img flipped">😈</p>
-    
-    <p id="img-2" class="floating-img">💦</p>
-    
-    <p id="img-3" class="floating-img">💪🏾</p>
-    
-    <p id="img-4" class="floating-img">🦄</p>
-    
-    <div class="<%= flash[:notice] %>" id="subscription-status"></div>
-  </div>
+<div class="canvas-container">
+  <canvas id="orb-canvas"></canvas>
+  <%= render 'components/about' %>
 </div>
+

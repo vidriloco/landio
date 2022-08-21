@@ -1,0 +1,87 @@
+.container {
+  z-index: 1 !important;
+  
+  .profile { 
+    text-align: center;
+    margin: 70px 0 60px 0;
+  }
+  
+  .profile img {
+    width: 15%;
+    
+    border-radius: 50%;
+    -webkit-border-radius: 50%; 
+    -moz-border-radius: 50%;
+    
+    border: 3px solid transparent;
+    border-spacing: 15px;
+    border-collapse: separate;
+    background: linear-gradient(
+    45deg,
+    var(--base) 25%,
+    var(--complimentary2)
+  );
+  }
+  
+  .bio {
+    text-align: center;
+    
+    h1 {
+      font-weight: normal;
+      font-size: 2.5em;
+      margin-bottom: 15px;
+    }
+    
+    h2 {
+      font-size: 2.5em;
+    }
+    
+    .description {
+      font-weight: 400;
+      font-size: 1em;
+      width: 35%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 50px;
+      font-family: 'Fira Sans', sans-serif;
+    }
+    
+    .footnote {
+      font-size: 1em;
+      font-weight: 500;
+    }
+    
+    .divider {
+      height: 0.5px;
+      background-color: white;
+      opacity: 20%;
+      margin: 40px 0;
+    }
+    
+    .links {
+      li {
+        display: inline;
+        margin-right: 10px;
+      }
+      
+      font-weight: bold;
+      margin: 60px 0 20px 0;
+    }
+  }
+}
+
+.canvas-container {
+  width: 100%; 
+  height: 100vh; 
+  position: relative; 
+  
+  canvas { 
+    position: absolute;
+    top:0; 
+    bottom:0;
+    right:0;
+    left:0;
+    margin: auto; 
+  } 
+}
+

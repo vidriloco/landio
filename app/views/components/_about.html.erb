@@ -25,10 +25,8 @@
           <%= render partial: 'components/about/svg-icons/github' %><span>Github</span>
         </a>
       </li>
-      <li class="black">
-        <a href="https://instagram.com/spalatinje" target="_blank">
-          <%= render partial: 'components/about/svg-icons/download' %><span>Download Resume</span>
-        </a>
+      <li>
+        <%= link_to("#{render(partial: 'components/about/svg-icons/download')} Resume".html_safe, download_cv_path(format: 'pdf')) %>
       </li>
     </ul>
     
